@@ -1,2 +1,2 @@
 # WSL_Distro
-auto install Archlinux
+Install.bat  #auto install Archlinux
