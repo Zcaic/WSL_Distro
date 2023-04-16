@@ -48,7 +48,7 @@ if not exist %archiso% (
 	
 	wsl -d alpine-makerootfs -e mv arch_O.tar.gz /tmp/
 	wsl -d alpine-makerootfs -e tar -xzf /tmp/arch_O.tar.gz -C /tmp/
-	wsl -d alpine-makerootfs -e tar -cf /tmp/Archlinux_WSL_root.tar . -C /tmp/root.x86_64
+	wsl -d alpine-makerootfs -e tar -cf /tmp/Archlinux_WSL_root.tar -C /tmp/root.x86_64 . 
 	wsl -d alpine-makerootfs -e mv /tmp/Archlinux_WSL_root.tar %archiso%
 )
 ::wsl -d alpine-makerootfs -e cp tar_conv.txt /tmp/tar_conv
